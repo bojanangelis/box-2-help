@@ -1,16 +1,12 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+@layer components {
+  .button {
+    @apply lg:p-2 cursor-pointer hover:border-b-2 border-red-400 font-semibold hover:scale-105 transition transform duration-100 ease-out;
+  }
+  .text {
+    @apply text-2xl font-semibold text-slate-500;
+  }
 }
